@@ -107,7 +107,8 @@ include $(CLEAR_VARS)
 LOCAL_MODULE                    := libOmxVdec
 LOCAL_MODULE_TAGS               := optional
 LOCAL_CFLAGS                    := $(libmm-vdec-def) -Werror
-LOCAL_C_INCLUDES                += $(libmm-vdec-inc)
+LOCAL_C_INCLUDES                += $(libmm-vdec-inc) \
+                                   frameworks/native/libs/nativebase/include
 LOCAL_ADDITIONAL_DEPENDENCIES   := $(libmm-vdec-add-dep)
 
 LOCAL_PRELINK_MODULE    := false
